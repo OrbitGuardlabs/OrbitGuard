@@ -36,3 +36,22 @@ export {
   // Public API
   orbit,
 } from './policy';
+
+export {
+  // Simulation
+  buildInvocationTx,
+  simulateTransaction,
+  simulateInvoke,
+  parseSimulationResponse,
+  describeStateChange,
+  explain,
+  explainOneLine,
+  DEFAULT_RPC_URL,
+  DEFAULT_NETWORK_PASSPHRASE,
+  TESTNET_NATIVE_SAC,
+  // Simulation types
+  type SimulationOptions,
+  type InvokeInput,
+  type SimulationResult,
+  type StateChangeSummary,
+} from './simulation';
