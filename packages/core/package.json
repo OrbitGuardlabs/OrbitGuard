@@ -1,0 +1,18 @@
+{
+  "name": "@orbitguard/core",
+  "version": "0.1.0",
+  "description": "OrbitGuard policy engine - the core permission and execution layer for autonomous agents on Stellar/Soroban",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "test": "vitest run --config ../../vitest.config.ts"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^14.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  },
+  "keywords": ["stellar", "soroban", "policy", "agents", "security"],
+  "license": "SEE LICENSE IN ../../LICENSE"
+}
