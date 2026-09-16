@@ -38,6 +38,14 @@ export {
 } from './policy';
 
 export {
+  ApprovalStore,
+  type ApprovalRequest,
+  type PendingApproval,
+} from './approvals';
+
+export { runApprovalCli } from './approval-cli';
+
+export {
   // Simulation
   buildInvocationTx,
   simulateTransaction,

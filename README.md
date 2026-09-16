@@ -255,6 +255,19 @@ Designed to be independently verifiable — audit doesn't rely on trusting the a
 
 Found a vulnerability? Please report it responsibly rather than opening a public issue — see `SECURITY.md`.
 
+### Local approvals (v1)
+
+The approval CLI operates on the local administrator's SQLite database. OS/database
+access is the trust boundary: actor names are not remote authentication, a single
+rejection vetoes the request, and `claim` binds a prior approval to an exact
+transaction hash immediately before signing.
+
+```bash
+npm run approval -- show approvals.sqlite <id>
+npm run approval -- approve approvals.sqlite <id> alice
+npm run approval -- reject approvals.sqlite <id> bob
+```
+
 ## Contributing
 
 OrbitGuard is open source, built for teams building with Stellar. Contributions to the policy engine, simulation tooling, explainability, and SDK integrations are welcome.
